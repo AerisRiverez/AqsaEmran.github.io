@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Fractal Page</title>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.11.2/lib/p5.min.js"></script>
+<script src="sketch.js"></script>
+</head>
+<body>
+<h1 style="color: white;">My Website</h1>
+<body>
+<p style="color: white;">Created with p5.js</p>
+<a href="https://editor.p5js.org/344760509/full/htQAG5MFj">Visit sketch.js</a>
+</BODY>
+<BR>
+<BR>
+<a href="https://en.wikipedia.org/wiki/Emily_(2022_film)">EMILY</a>
+</BODY>
+<BR>
+<BR>
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/026wpXkLAjImiWOzzcJBHj?utm_source=generator&si=ede04201590c46c0" width="25%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    
+<h1 style="color: white;">Until Second Semester</h1>
+<h2 style="color: white;", id="countdown">Loading countdown...</h2>
+
+<script>
+  const targetDate = new Date("2027-02-03T00:00:00").getTime();
+
+  const timer = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Fixed backticks around the output string
+    document.getElementById("countdown").textContent = 
+      `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    if (distance < 0) {
+      clearInterval(timer);
+      document.getElementById("countdown").textContent = "Event has arrived!";
+    }
+  }, 1000);
+</script>
+</body>
+<a class="weatherwidget-io" href="https://forecast7.com/en/43d65n79d38/toronto/" datalabel_1="TORONTO" data-label_2="WEATHER" data-theme="original" >TORONTO WEATHER</a>
+<script>
+!function(d,s,id){var
+js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id
+=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs
+);}}(document,'script','weatherwidget-io-js');
+</script>
+<BR>
+<BR>
+<BR>
+</HTML>
